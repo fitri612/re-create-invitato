@@ -8,7 +8,7 @@ import { func, bool } from 'prop-types';
 import { BG_MOBILE_VIEW } from '../../assets/assets';
 import ButtonOpen from '../Common/ButtonOpen';
 
-function Cover({onLoaded, onDetail }) {
+function Cover({ onLoaded, onDetail }) {
     const [loading, setLoading] = useState(false);
     const [showTitle, setShowTitle] = useState(false);
 
@@ -29,12 +29,12 @@ function Cover({onLoaded, onDetail }) {
 
     return (
         <Box
-        minHeight="100vh"
-        bgColor={`rgba(50, 48, 48, 0.55)`} // Opacity 55%
-        bgImage={`url(${BG_MOBILE_VIEW})`}
-        bgSize="cover"
-        bgPos="center"
-        position="relative"
+            minHeight="100vh"
+            bgColor={`rgba(50, 48, 48, 0.55)`} // Opacity 55%
+            bgImage={`url(${BG_MOBILE_VIEW})`}
+            bgSize="cover"
+            bgPos="center"
+            position="relative"
         >
             <Box bgColor="rgb(50 48 48 / 55% )" height="100vh" width="100%">
                 <Center width="100%" zIndex="2" height="90vh">

@@ -20,7 +20,7 @@ function SideContent() {
             <Box padding="42px" bgColor="blackAlpha.400" height="100%">
                 <Animation animationType="fade-up">
                     <Text letterSpacing="4px" fontSize="lg" color="whiteAlpha.800" fontFamily="Poppins">
-                        WEDDING ANNOUNCEMENT
+                        x ANNOUNCEMENT
                     </Text>
                 </Animation>
                 <Animation animationType="fade-up">
