@@ -8,14 +8,9 @@ import CoverInside from './components/CoverInside';
 import OpeningSection from './components/OpeningSection/Index';
 import { Box } from '@chakra-ui/react';
 import Music from './assets/music.mp3';
-
-
-
 function App() {
   const [showDetailContent, setShowDetailContent] = useState(false);
   const audioRef = useRef(null);
-
-
 
   const handleClickDetail = useCallback(() => {
     setShowDetailContent(true);
@@ -24,7 +19,10 @@ function App() {
 
   const playMusic = () => {
     if (audioRef.current) {
-      audioRef.current.play();
+      // Ensures autoplay after user interaction
+      audioRef.current.play().catch(error => {
+        console.error("Autoplay was prevented:", error);
+      });
     }
   };
 
@@ -37,16 +35,11 @@ function App() {
         <OpeningSection />
       </Box>
     );
-
   }
-
-
-
-
 
   return (
     <Layout>
-      <audio ref={audioRef} src={Music} />
+      <audio ref={audioRef} src={Music} preload="auto" />
       {!showDetailContent && (
         <Animation>
           <Cover loaded={showDetailContent} onDetail={handleClickDetail} />
@@ -62,3 +55,4 @@ function App() {
 }
 
 export default App;
+
