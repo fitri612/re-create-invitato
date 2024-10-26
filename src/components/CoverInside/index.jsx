@@ -4,6 +4,7 @@ import { Box, Center, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import { func, bool } from 'prop-types';
 import ImagesFade from '../Common/faded';
 import Animation from '../Common/Animation';
+import { IoIosArrowDown } from "react-icons/io";
 
 // import { FaChevronDown } from 'react-icons/fa';
 
@@ -48,9 +49,14 @@ function CoverInside() {
                                     <Box textAlign="center" color="white">
                                         {/* BRIDE SECTION */}
                                         <Animation animationType="fade-up">
-                                            <Text zIndex="99" fontSize="16px" letterSpacing="3px"
+                                            <Text
+                                                zIndex="99"
+                                                fontSize="16px"
+                                                letterSpacing="3px"
                                                 fontWeight="bold"
-                                                fontFamily="headingAlternative">
+                                                fontFamily="headingAlternative"
+                                                mt={'60px'}
+                                            >
                                                 WEDDING ANNOUNCEMENT
                                             </Text>
                                         </Animation>
@@ -67,11 +73,9 @@ function CoverInside() {
                                     bgSize="cover"
                                     borderRadius="16px"
                                     position="absolute"
-                                    bottom="-68px"
+                                    top="40%"
                                 >
                                     <Box textAlign="center" color="white">
-
-
                                         <Animation animationType="fade-up">
                                             <Heading
                                                 margin="16px 0"
@@ -91,27 +95,39 @@ function CoverInside() {
                                                 size="xl"
                                                 zIndex="99"
                                                 fontStyle="italic"
-                                                fontFamily="sans-serif"
-                                            // textTransform="uppercase"
+                                                fontFamily="Newsreader"
                                             >
                                                 #TImetoshaRE
                                             </Heading>
                                         </Animation>
                                     </Box>
 
-                                    <Box textAlign="end" color="white" marginTop="190px">
+                                </Box>
+                                <Box
+                                    color="white"
+                                    letterSpacing="1px"
+                                    fontWeight="400"
+                                    fontSize="10px"
+                                    width="100%"
+                                    maxW="500px"
+                                    padding="24px"
+                                    bgSize="cover"
+                                    borderRadius="16px"
+                                    position="absolute"
+                                    bottom="-68px"
+                                    textAlign="end"
+                                    marginTop="190px">
 
-                                        <Animation animationType="fade-up">
-                                            <Flex alignItems="center" textAlign="end" justifyContent="flex-end">
-                                                <Text marginRight="8px" fontWeight="bold" fontSize="md"
-                                                    fontFamily="headingAlternative" textTransform="uppercase">
-                                                    Scrool to Begin
-                                                </Text>
-                                                {/* <Image src={Arrowdown} width="20px" height="20px" /> */}
+                                    <Animation animationType="fade-up">
+                                        <Flex alignItems="center" textAlign="end" justifyContent="flex-end">
+                                            <Text marginRight="8px" fontWeight="bold" fontSize="md"
+                                                fontFamily="headingAlternative" textTransform="uppercase">
+                                                Scrool to Begin
+                                            </Text>
+                                            <IoIosArrowDown size="20px" color="white" />
 
-                                            </Flex>
-                                        </Animation>
-                                    </Box>
+                                        </Flex>
+                                    </Animation>
                                 </Box>
                             </>
                         )}

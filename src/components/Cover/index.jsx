@@ -30,7 +30,7 @@ function Cover({ onLoaded, onDetail }) {
     return (
         <Box
             minHeight="100vh"
-            bgColor={`rgba(50, 48, 48, 0.55)`} // Opacity 55%
+            bgColor={`rgba(50, 48, 48, 0.55)`}
             bgImage={`url(${BG_MOBILE_VIEW})`}
             bgSize="cover"
             bgPos="center"
@@ -52,16 +52,58 @@ function Cover({ onLoaded, onDetail }) {
                                     bgSize="cover"
                                     borderRadius="16px"
                                     position="absolute"
-                                // bottom="120px"
+                                    top="60px"
                                 >
                                     <Box textAlign="center" color="white">
                                         {/* BRIDE SECTION */}
                                         <Animation animationType="fade-up">
-                                            <Text zIndex="99" fontSize="16px" letterSpacing="2px"
-                                                fontWeight="bold"
-                                                fontFamily="headingAlternative">
-                                                WEDDING ANNOUNCEMENT
-                                            </Text>
+                                            <Text zIndex="99" fontSize="md" letterSpacing="2px" fontWeight="bold" fontFamily="headingAlternative"> WEDDING ANNOUNCEMENT </Text>
+                                        </Animation>
+                                    </Box>
+                                </Box>
+                                <Box
+                                    color="white"
+                                    letterSpacing="1px"
+                                    fontWeight="300"
+                                    fontSize="10px"
+                                    width="100%"
+                                    maxW="500px"
+                                    // padding="24px"
+                                    bgSize="cover"
+                                    borderRadius="16px"
+                                    position="absolute"
+                                    top="40%"
+                                >
+                                    <Box textAlign="center" color="white">
+                                        <Animation animationType="fade-up">
+                                            <Heading
+                                                margin="16px 0"
+                                                fontWeight="300"
+                                                size="xl"
+                                                zIndex="99"
+                                                fontFamily="initial"
+                                                textTransform="uppercase"
+                                                // whiteSpace="nowrap" 
+                                                // overflow="hidden" 
+                                                // textOverflow="ellipsis"
+                                            >
+                                                Tiffany & Jared’s
+                                            </Heading>
+                                        </Animation>
+                                        <Animation animationType="fade-up">
+                                            <Heading
+                                                marginTop="-15px"
+                                                fontWeight="300"
+                                                size="xl"
+                                                zIndex="99"
+                                                fontStyle="italic"
+                                                fontFamily="Newsreader"
+                                                whiteSpace="nowrap"
+                                                overflow="hidden"
+                                                textOverflow="ellipsis"
+                                            >
+                                                #TImetoshaRE
+                                            </Heading>
                                         </Animation>
                                     </Box>
                                 </Box>
@@ -76,47 +118,20 @@ function Cover({ onLoaded, onDetail }) {
                                     bgSize="cover"
                                     borderRadius="16px"
                                     position="absolute"
-                                    bottom="0px"
+                                    bottom="50px"
                                 >
-                                    <Box textAlign="center" color="white">
-                                        <Animation animationType="fade-up">
-                                            <Heading
-                                                margin="16px 0"
-                                                fontWeight="300"
-                                                size="xl"
-                                                zIndex="99"
-                                                fontFamily="initial"
-                                                textTransform="uppercase"
-                                            >
-                                                Tiffany & Jared’s
-                                            </Heading>
-                                        </Animation>
-                                        <Animation animationType="fade-up">
-                                            <Heading
-                                                marginTop="-15px"
-                                                fontWeight="300"
-                                                size="xl"
-                                                zIndex="99"
-                                                fontStyle="italic"
-                                                fontFamily="sans-serif"
-                                            >
-                                                #TImetoshaRE
-                                            </Heading>
-                                        </Animation>
-                                    </Box>
 
                                     <Animation animationType="floating">
                                         <ButtonOpen
                                             loaded={onLoaded}
                                             loading={loading}
-                                            marginTop="80px"
+                                            marginTop="160px"
                                             marginBottom="88px"
                                             text="Open"
                                             zIndex="99"
                                             size="md"
                                             boxShadow="md"
                                             onClick={handleClickDetail}
-
                                         />
                                     </Animation>
                                 </Box>

@@ -10,11 +10,13 @@ function ButtonOpen({ loading, onClick, text, style, ...rest }) {
                 isLoading={loading}
                 onClick={onClick}
                 className="animation-heart"
-                borderRadius="10px"
+                borderRadius="0px"
                 fontWeight="normal"
                 backgroundColor={'#FFF'}
                 color={'#000'}
-                padding={'20px'}
+                padding={'0px 50px'}
+                fontFamily={'Newsreader'}
+                fontSize={'xl'}
                 _hover={{ bgColor: 'hover' }}
                 {...rest}
             >

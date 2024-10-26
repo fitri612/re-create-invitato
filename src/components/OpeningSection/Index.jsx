@@ -22,10 +22,8 @@ function Opening() {
           <Box marginTop="24px" style={{
             letterSpacing: '2px',
           }}>
-            <Text fontSize="2xl" fontFamily="headingAlternative" fontWeight="bold">DEAR MR-MRS-MS,</Text>
-            <Text fontFamily="headingAlternative" fontWeight="bold" fontSize="xl">
-            FAMILY & FRIENDS
-            </Text>
+            <Text fontSize="sm" fontFamily="Poppins" fontWeight="bold">DEAR MR-MRS-MS,</Text>
+            <Text fontFamily="Poppins" fontWeight="bold" fontSize="sm"> FAMILY & FRIENDS </Text>
           </Box>
         </Animation>
         <Animation>
@@ -43,7 +41,7 @@ function Opening() {
           </Text>
         </Animation>
         <Animation>
-          <Text marginTop="24px" color="#1A1B1D" fontFamily="cursive"
+          <Text marginTop="24px" color="#000" fontFamily="Newsreader"
             fontStyle="italic" fontSize="xl">
             {`Together with joyful hearts and the grace of God, we joyfully announce the upcoming of our marriage.`}
           </Text>
