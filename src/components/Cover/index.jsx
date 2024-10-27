@@ -87,7 +87,7 @@ function Cover({ onLoaded, onDetail }) {
                                                 // overflow="hidden" 
                                                 // textOverflow="ellipsis"
                                             >
-                                                Tiffany & Jared’s
+                                                Tiffany & Jared
                                             </Heading>
                                         </Animation>
                                         <Animation animationType="fade-up">

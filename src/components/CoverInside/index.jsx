@@ -85,7 +85,7 @@ import { IoIosArrowDown } from "react-icons/io";
                                                 fontFamily="initial"
                                                 textTransform="uppercase"
                                             >
-                                                Tiffany & Jared’s
+                                                Tiffany & Jared
                                             </Heading>
                                         </Animation>
                                         <Animation animationType="fade-up">

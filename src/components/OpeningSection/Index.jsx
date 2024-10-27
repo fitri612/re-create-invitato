@@ -42,7 +42,7 @@ function Opening(_, ref) { // Accept ref as a second parameter
         </Animation>
         <Animation>
           <Text marginTop="24px" color="#000" fontFamily="Newsreader"
-            fontStyle="italic" fontSize="xl">
+            fontStyle="italic" fontSize="18px" p={"0px 10% 24px"}>
             {`Together with joyful hearts and the grace of God, we joyfully announce the upcoming of our marriage.`}
           </Text>
         </Animation>

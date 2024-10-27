@@ -39,12 +39,12 @@ function SideContent() {
                     >
                         Tiffany &
                         <br />
-                        Jared’s
+                        Jared
                     </Heading>
                 </Animation>
-                <Animation mt="24px" animationType="fade-up">
-                    <Text fontStyle="italic" fontSize="lg" 
-                    fontWeight={"semibold"} mt="24px"color="whiteAlpha.800" fontFamily="Newsreader">
+                <Animation mt="24px" animationType="fade-up" >
+                    <Text fontStyle="italic" fontSize="lg" maxWidth={"800px"} letterSpacing={"1px"}
+                    fontWeight={"400"} mt="24px"color="white" fontFamily="Newsreader">
                         {`“Aku ingin mencintaimu dengan sederhana; dengan kata yang tak sempat diucapkan kayu kepada api yang menjadikannya abu. Aku ingin mencintaimu dengan sederhana; dengan isyarat yang tak sempat disampaikan awan kepada hujan yang menjadikannya tiada.”`}
                         <br />
                         — Sapardi Djoko Damono
