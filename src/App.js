@@ -14,6 +14,7 @@ function App() {
   const [isMuted, setIsMuted] = useState(false);
   const [showMusicControl, setShowMusicControl] = useState(false);
   const audioRef = useRef(null);
+  const openingSectionRef = useRef(null);
 
   const handleClickDetail = useCallback(() => {
     setShowDetailContent(true);
@@ -29,6 +30,12 @@ function App() {
     }
   };
 
+  const scrollToOpeningSection = () => {
+    if (openingSectionRef.current) {
+      openingSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const toggleMute = useCallback(() => {
     if (audioRef.current) {
       audioRef.current.muted = !audioRef.current.muted;
@@ -41,8 +48,8 @@ function App() {
 
     return (
       <Box>
-        <CoverInside />
-        <OpeningSection />
+        <CoverInside onScrollToBegin={scrollToOpeningSection} />
+        <OpeningSection ref={openingSectionRef} />
       </Box>
     );
   };

@@ -5,10 +5,10 @@ import { Box, Text, } from '@chakra-ui/react';
 import ImageSlider from '../Common/Slider';
 import Animation from '../Common/Animation';
 
-function Opening() {
-
+function Opening(_, ref) { // Accept ref as a second parameter
   return (
     <Box
+      ref={ref}
       bgColor="bgPrimary"
       // bgImage={`url(${BG_WELCOME})`}
       bgSize="cover"
@@ -55,4 +55,4 @@ function Opening() {
   );
 }
 
-export default React.memo(Opening);
+export default React.memo(React.forwardRef(Opening));

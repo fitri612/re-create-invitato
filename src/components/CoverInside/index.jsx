@@ -15,7 +15,7 @@ import { IoIosArrowDown } from "react-icons/io";
  * @return {JSX.Element}
  }
  */
-function CoverInside() {
+ function CoverInside({ onScrollToBegin }) {
     //   const [loading, setLoading] = useState(false);
     const [showTitle, setShowTitle] = useState(false);
 
@@ -119,7 +119,9 @@ function CoverInside() {
                                     marginTop="190px">
 
                                     <Animation animationType="fade-up">
-                                        <Flex alignItems="center" textAlign="end" justifyContent="flex-end">
+                                        <Flex alignItems="center" textAlign="end" justifyContent="flex-end"
+                                         onClick={onScrollToBegin} cursor="pointer"
+                                        >
                                             <Text marginRight="8px" fontWeight="bold" fontSize="md"
                                                 fontFamily="headingAlternative" textTransform="uppercase">
                                                 Scrool to Begin
